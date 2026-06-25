@@ -26,7 +26,7 @@ export default function App() {
       window.fbq('track', 'ViewContent', {
         content_name: 'Álbum de Colorir Copa 2026',
         content_category: 'Livro Digital',
-        value: 9.99,
+        value: 14.99,
         currency: 'BRL',
       })
     }

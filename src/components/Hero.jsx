@@ -103,7 +103,7 @@ export default function Hero() {
                 }}
               >
                 <sup className="text-[36%] align-super mt-3 inline-block">R$</sup>
-                19
+                14
                 <sup className="text-[36%] align-super mt-3 inline-block">,99</sup>
               </span>
               <div className="flex flex-col gap-1.5">

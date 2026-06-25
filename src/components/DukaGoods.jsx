@@ -80,7 +80,7 @@ export default function DukaGoods() {
                 style={{ fontSize: 'clamp(3rem,8vw,4rem)', lineHeight: '.9', textShadow: '0 3px 0 #007A2D' }}
               >
                 <sup className="text-[38%] align-super mt-2 inline-block">R$</sup>
-                19<sup className="text-[38%] align-super mt-2 inline-block">,99</sup>
+                14<sup className="text-[38%] align-super mt-2 inline-block">,99</sup>
               </p>
               <CTAButton
                 href="https://pay.lowify.com.br/checkout?product_id=eCUU2y"

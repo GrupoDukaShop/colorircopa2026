@@ -28,10 +28,10 @@ export default function FloatingButtons() {
       <div className="fixed bottom-0 left-0 right-0 z-50 sm:hidden bg-copa-green border-t-2 border-copa-green-d shadow-[0_-4px_24px_rgba(0,0,0,.3)]">
         <a
           href="https://pay.lowify.com.br/checkout?product_id=eCUU2y"
-          onClick={() => fbTrack('InitiateCheckout', { value: 19.99, currency: 'BRL', num_items: 1, content_ids: ['eCUU2y'] })}
+          onClick={() => fbTrack('InitiateCheckout', { value: 14.99, currency: 'BRL', num_items: 1, content_ids: ['eCUU2y'] })}
           className="flex flex-col items-center justify-center py-3 px-4 text-white font-display text-xl tracking-wide gap-0.5"
         >
-          ⚽ PACOTE COMPLETO — R$19,99
+          ⚽ PACOTE COMPLETO — R$14,99
           <span className="font-body text-[10px] font-semibold opacity-85 tracking-wide">
             Álbum + 2 Bônus · Acesso imediato
           </span>

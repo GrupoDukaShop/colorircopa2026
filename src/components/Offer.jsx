@@ -59,7 +59,7 @@ export default function Offer() {
                 style={{ fontSize: 'clamp(4rem,11vw,6rem)', lineHeight: '.88', textShadow: '0 4px 0 #007A2D' }}
               >
                 <sup className="text-[36%] align-super mt-3 inline-block">R$</sup>
-                19<sup className="text-[36%] align-super mt-3 inline-block">,99</sup>
+                14<sup className="text-[36%] align-super mt-3 inline-block">,99</sup>
               </span>
               <span className="bg-copa-green text-white font-display text-lg w-14 h-14 rounded-full flex items-center justify-center -rotate-12 border-2 border-white/20 flex-shrink-0">
                 -67%

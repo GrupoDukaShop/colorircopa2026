@@ -17,7 +17,7 @@ export default function FinalCTA() {
           ⚽ Bora pro Hexa!
         </h2>
         <p className="text-white/90 text-lg font-semibold mb-8 max-w-[520px] mx-auto">
-          Garanta o pacote completo com álbum + 2 bônus por apenas R$19,99.
+          Garanta o pacote completo com álbum + 2 bônus por apenas R$14,99.
           Acesso imediato, imprima à vontade!
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
@@ -26,7 +26,7 @@ export default function FinalCTA() {
             variant="gold"
             size="lg"
           >
-            ⚽ PACOTE COMPLETO — R$19,99
+            ⚽ PACOTE COMPLETO — R$14,99
           </CTAButton>
           <CTAButton
             href="https://pay.lowify.com.br/checkout.php?product_id=8Sj2aC"
