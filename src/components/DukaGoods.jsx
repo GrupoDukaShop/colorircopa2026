@@ -141,7 +141,7 @@ export default function DukaGoods() {
                 9<sup className="text-[38%] align-super mt-2 inline-block">,99</sup>
               </p>
               <CTAButton
-                href="https://pay.lowify.com.br/checkout?product_id=t6NWvH"
+                href="https://pay.lowify.com.br/checkout.php?product_id=8Sj2aC"
                 variant="gold"
                 size="md"
                 className="w-full mt-3"

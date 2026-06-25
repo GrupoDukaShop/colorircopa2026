@@ -110,7 +110,7 @@ export default function Offer() {
             <p className="text-white/30 text-xs font-semibold mb-5 tracking-wide">
               Pagamento único · para sempre seu
             </p>
-            <CTAButton href="https://pay.lowify.com.br/checkout?product_id=t6NWvH" variant="gold" size="md" className="w-full">
+            <CTAButton href="https://pay.lowify.com.br/checkout.php?product_id=8Sj2aC" variant="gold" size="md" className="w-full">
               🎨 SÓ O BÁSICO POR R$9,99
             </CTAButton>
           </div>

@@ -4,7 +4,7 @@ const getProductId = href => {
   try { return new URL(href).searchParams.get('product_id') || '' } catch { return '' }
 }
 
-const prices = { eCUU2y: 19.99, t6NWvH: 9.99 }
+const prices = { eCUU2y: 19.99, '8Sj2aC': 9.99 }
 
 function trackCheckout(href) {
   if (!isCheckout(href) || typeof window === 'undefined' || !window.fbq) return

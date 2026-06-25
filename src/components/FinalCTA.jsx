@@ -29,7 +29,7 @@ export default function FinalCTA() {
             ⚽ PACOTE COMPLETO — R$19,99
           </CTAButton>
           <CTAButton
-            href="https://pay.lowify.com.br/checkout?product_id=t6NWvH"
+            href="https://pay.lowify.com.br/checkout.php?product_id=8Sj2aC"
             variant="pink"
             size="lg"
           >

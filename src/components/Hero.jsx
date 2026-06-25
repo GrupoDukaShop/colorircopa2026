@@ -127,8 +127,8 @@ export default function Hero() {
               ⚽ QUERO O PACOTE COMPLETO
             </CTAButton>
             <a
-              href="https://pay.lowify.com.br/checkout?product_id=t6NWvH"
-              onClick={() => window.fbq?.('track', 'InitiateCheckout', { value: 9.99, currency: 'BRL', num_items: 1, content_ids: ['t6NWvH'] })}
+              href="https://pay.lowify.com.br/checkout.php?product_id=8Sj2aC"
+              onClick={() => window.fbq?.('track', 'InitiateCheckout', { value: 9.99, currency: 'BRL', num_items: 1, content_ids: ['8Sj2aC'] })}
               className="text-white/55 text-sm font-semibold hover:text-white/85 underline underline-offset-2 transition-colors"
             >
               Só o básico por R$9,99 →
