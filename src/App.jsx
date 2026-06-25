@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { useReveal } from './hooks/useReveal'
 
 import Topbar         from './components/Topbar'
@@ -49,6 +50,7 @@ export default function App() {
       </main>
       <Footer />
       <FloatingButtons />
+      <Analytics />
     </>
   )
 }
