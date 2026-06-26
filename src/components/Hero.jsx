@@ -120,15 +120,14 @@ export default function Hero() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 items-center justify-center md:justify-start">
             <CTAButton
-              href="https://pay.lowify.com.br/checkout?product_id=eCUU2y"
+              href="/ir?p=completo"
               size="lg"
               className="w-full sm:w-auto"
             >
               ⚽ QUERO O PACOTE COMPLETO
             </CTAButton>
             <a
-              href="https://pay.lowify.com.br/checkout.php?product_id=8Sj2aC"
-              onClick={() => window.fbq?.('track', 'InitiateCheckout', { value: 9.99, currency: 'BRL', num_items: 1, content_ids: ['8Sj2aC'] })}
+              href="/ir?p=basico"
               className="text-white/55 text-sm font-semibold hover:text-white/85 underline underline-offset-2 transition-colors"
             >
               Só o básico por R$9,99 →

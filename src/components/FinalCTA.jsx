@@ -22,14 +22,14 @@ export default function FinalCTA() {
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
           <CTAButton
-            href="https://pay.lowify.com.br/checkout?product_id=eCUU2y"
+            href="/ir?p=completo"
             variant="gold"
             size="lg"
           >
             ⚽ PACOTE COMPLETO — R$14,99
           </CTAButton>
           <CTAButton
-            href="https://pay.lowify.com.br/checkout.php?product_id=8Sj2aC"
+            href="/ir?p=basico"
             variant="pink"
             size="lg"
           >

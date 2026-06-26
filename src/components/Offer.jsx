@@ -68,7 +68,7 @@ export default function Offer() {
             <p className="text-white/35 text-xs font-semibold mb-5 tracking-wide">
               Pagamento único · para sempre seu
             </p>
-            <CTAButton href="https://pay.lowify.com.br/checkout?product_id=eCUU2y" size="lg" className="w-full">
+            <CTAButton href="/ir?p=completo" size="lg" className="w-full">
               ⚽ QUERO O PACOTE COMPLETO
             </CTAButton>
             <div className="inline-flex items-center gap-2 bg-copa-green/15 border border-copa-green/35 rounded-xl px-3 py-2.5 mt-4 text-[12px] font-semibold text-white/75">
@@ -110,7 +110,7 @@ export default function Offer() {
             <p className="text-white/30 text-xs font-semibold mb-5 tracking-wide">
               Pagamento único · para sempre seu
             </p>
-            <CTAButton href="https://pay.lowify.com.br/checkout.php?product_id=8Sj2aC" variant="gold" size="md" className="w-full">
+            <CTAButton href="/ir?p=basico" variant="gold" size="md" className="w-full">
               🎨 SÓ O BÁSICO POR R$9,99
             </CTAButton>
           </div>
