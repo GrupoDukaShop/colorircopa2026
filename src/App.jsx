@@ -38,8 +38,8 @@ export default function App() {
       <main>
         <Hero />
         <StatsBar />
-        <DukaGoods />
         <Preview />
+        <DukaGoods />
         <HowItWorks />
         <Testimonials />
         <Features />
