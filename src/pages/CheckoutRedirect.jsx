@@ -29,7 +29,7 @@ export default function CheckoutRedirect() {
   return (
     <>
       <Analytics />
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', background: '#000D2E' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', background: '#0038A8' }}>
         <p style={{ color: '#fff', fontFamily: 'sans-serif', fontSize: '1rem' }}>Redirecionando…</p>
       </div>
     </>

@@ -15,7 +15,7 @@ export default function Offer() {
     <section
       id="oferta"
       className="relative py-20 md:py-28 px-5 overflow-hidden"
-      style={{ background: 'linear-gradient(145deg, #001035, #0A3070)' }}
+      style={{ background: 'linear-gradient(145deg, #00277A, #1565C0)' }}
     >
       {/* Glows */}
       <div className="absolute inset-0 pointer-events-none">
@@ -35,7 +35,7 @@ export default function Offer() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {/* FEATURED R$19,99 */}
-          <div className="reveal relative bg-white/5 backdrop-blur-sm border-2 border-copa-green/50 rounded-3xl p-8 text-center shadow-[0_0_80px_rgba(0,155,58,.15)]">
+          <div className="reveal relative bg-white/10 backdrop-blur-sm border-2 border-copa-green/50 rounded-3xl p-8 text-center shadow-[0_0_80px_rgba(0,155,58,.15)]">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
               <span className="bg-copa-green text-white font-display text-sm tracking-wide px-5 py-1.5 rounded-full shadow-lg whitespace-nowrap">
                 ⭐ MAIS POPULAR
@@ -78,7 +78,7 @@ export default function Offer() {
           </div>
 
           {/* BUDGET R$9,99 */}
-          <div className="reveal delay-1 bg-white/3 border border-white/15 rounded-3xl p-8 text-center flex flex-col">
+          <div className="reveal delay-1 bg-white/8 border border-white/20 rounded-3xl p-8 text-center flex flex-col">
             <span className="inline-block bg-white/10 text-white/60 text-[10px] font-bold tracking-[2px] uppercase px-4 py-1.5 rounded-full mb-4">
               Opção Básica
             </span>

@@ -29,7 +29,7 @@ export default function FloatingButtons() {
         {/* Básico */}
         <a
           href="/ir?p=basico"
-          className="flex-1 flex flex-col items-center justify-center py-3 px-2 gap-0.5 bg-[#1a1a2e] text-white font-display text-base tracking-wide border-r border-white/10"
+          className="flex-1 flex flex-col items-center justify-center py-3 px-2 gap-0.5 bg-[#00277A] text-white font-display text-base tracking-wide border-r border-white/20"
         >
           R$9,99
           <span className="font-body text-[9px] font-semibold opacity-60 tracking-wide normal-case">

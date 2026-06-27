@@ -35,7 +35,7 @@ export default function Topbar() {
   }, [])
 
   return (
-    <div className="sticky top-0 z-50 bg-navy-800 border-b-2 border-copa-green flex items-center justify-center gap-2 flex-wrap px-4 py-2.5 text-sm font-semibold text-white">
+    <div className="sticky top-0 z-50 bg-navy-950 border-b-2 border-copa-green flex items-center justify-center gap-2 flex-wrap px-4 py-2.5 text-sm font-semibold text-white">
       <span>⏰</span>
       <span>Oferta de lançamento expira em</span>
       <span

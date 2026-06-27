@@ -5,7 +5,7 @@ export default function DukaGoods() {
     <section
       id="pacote"
       className="relative py-20 md:py-28 px-5 overflow-hidden border-t-2 border-b-2 border-white/10"
-      style={{ background: 'linear-gradient(150deg, #000D2E, #0A3070)' }}
+      style={{ background: 'linear-gradient(150deg, #00277A, #1565C0)' }}
     >
       {/* Glows */}
       <div className="absolute inset-0 pointer-events-none">
@@ -31,7 +31,7 @@ export default function DukaGoods() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
 
           {/* FEATURED — R$19,99 */}
-          <div className="reveal relative bg-white/5 border-2 border-copa-green/60 rounded-3xl p-7 flex flex-col shadow-[0_0_60px_rgba(0,155,58,.2)]">
+          <div className="reveal relative bg-white/10 border-2 border-copa-green/60 rounded-3xl p-7 flex flex-col shadow-[0_0_60px_rgba(0,155,58,.2)]">
             {/* Recommended badge */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
               <span className="bg-copa-green text-white font-display text-sm tracking-wide px-5 py-1.5 rounded-full shadow-lg whitespace-nowrap">
@@ -93,7 +93,7 @@ export default function DukaGoods() {
           </div>
 
           {/* BUDGET — R$9,99 */}
-          <div className="reveal delay-1 bg-white/3 border border-white/15 rounded-3xl p-7 flex flex-col">
+          <div className="reveal delay-1 bg-white/8 border border-white/20 rounded-3xl p-7 flex flex-col">
 
             <div className="flex justify-center mb-5">
               <div className="relative">

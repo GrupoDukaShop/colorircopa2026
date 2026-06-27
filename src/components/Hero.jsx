@@ -21,7 +21,7 @@ export default function Hero() {
   return (
     <section
       className="relative overflow-hidden"
-      style={{ background: 'linear-gradient(140deg, #000D2E 0%, #001E5A 55%, #0A3070 100%)' }}
+      style={{ background: 'linear-gradient(140deg, #00277A 0%, #0038A8 55%, #1565C0 100%)' }}
     >
       {/* Background hex grid */}
       <div
