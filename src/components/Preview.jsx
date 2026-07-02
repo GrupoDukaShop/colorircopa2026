@@ -51,8 +51,8 @@ export default function Preview() {
         >
           {pages.map((p, i) => (
             <div key={i} className="snap-center shrink-0 w-[78vw] sm:w-[300px] relative">
-              <div className="rounded-2xl overflow-hidden border-2 border-gray-200 shadow-card bg-white">
-                <img src={p.src} alt={p.tag || ''} className="w-full h-auto block" />
+              <div className="rounded-2xl overflow-hidden border-2 border-gray-200 shadow-card bg-white aspect-[3/4]">
+                <img src={p.src} alt={p.tag || ''} className="w-full h-full object-contain" />
               </div>
               {p.tag && (
                 <span className={`absolute bottom-2 left-1/2 -translate-x-1/2 text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap shadow-sm ${p.tagColor}`}>
