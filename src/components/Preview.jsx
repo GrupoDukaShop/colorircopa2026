@@ -1,55 +1,25 @@
 import { useState, useRef } from 'react'
 import { SectionHeader } from './ui/SectionHeader'
 
-const albums = [
-  {
-    id: 'copa',
-    emoji: '⚽',
-    label: 'Copa 2026',
-    note: '+28 páginas com os principais craques da seleção',
-    pages: [
-      { src: 'ney.png',            tag: 'Neymar Jr ⚡', tagColor: 'bg-copa-gold text-navy-800' },
-      { src: 'pagina_endrick.png', tag: 'Endrick 👑',   tagColor: 'bg-copa-green text-white'  },
-    ],
-  },
-  {
-    id: 'atividades',
-    emoji: '🎨',
-    label: 'Atividades',
-    note: 'Passatempos, labirintos, caça-palavras e muito mais',
-    pages: [
-      { src: 'at1.png', tag: null },
-      { src: 'at2.png', tag: null },
-    ],
-  },
-  {
-    id: 'duka',
-    emoji: '📚',
-    label: 'Duka Goods',
-    note: 'Conteúdo exclusivo da coleção Duka Goods',
-    pages: [
-      { src: 'duka1.png', tag: null },
-      { src: 'duka2.png', tag: null },
-    ],
-  },
+const pages = [
+  { src: 'ney.png',            tag: 'Neymar Jr ⚡', tagColor: 'bg-copa-gold text-navy-800' },
+  { src: 'pagina_endrick.png', tag: 'Endrick 👑',   tagColor: 'bg-copa-green text-white'  },
+  { src: 'vini.png',           tag: 'Vini Jr 🔥',   tagColor: 'bg-copa-pink text-white'   },
+  { src: 'at1.png',            tag: null },
+  { src: 'at2.png',            tag: null },
+  { src: 'duka1.png',          tag: null },
+  { src: 'duka2.png',          tag: null },
 ]
 
 export default function Preview() {
-  const [active, setActive] = useState('copa')
   const [slide, setSlide] = useState(0)
   const scrollRef = useRef(null)
-  const album = albums.find(a => a.id === active)
-
-  const handleTabChange = (id) => {
-    setActive(id)
-    setSlide(0)
-  }
 
   const handleScroll = () => {
     if (!scrollRef.current || !scrollRef.current.children[0]) return
     const cardWidth = scrollRef.current.children[0].offsetWidth + 12
     const index = Math.round(scrollRef.current.scrollLeft / cardWidth)
-    setSlide(Math.max(0, Math.min(index, album.pages.length - 1)))
+    setSlide(Math.max(0, Math.min(index, pages.length - 1)))
   }
 
   const goTo = (i) => {
@@ -69,37 +39,18 @@ export default function Preview() {
             body="Traços grossos no estilo HQ — fácil de colorir com lápis, canetinha ou tinta."
           />
         </div>
-
-        {/* Tabs */}
-        <div className="grid grid-cols-3 gap-1.5 mt-8 mb-8 bg-gray-100 rounded-2xl p-1.5">
-          {albums.map(a => (
-            <button
-              key={a.id}
-              onClick={() => handleTabChange(a.id)}
-              className={`flex flex-col items-center gap-1 py-3 px-2 rounded-xl transition-all duration-200 ${
-                active === a.id
-                  ? 'bg-navy-800 text-white shadow-md'
-                  : 'text-navy-700/50 hover:text-navy-700 hover:bg-white/60'
-              }`}
-            >
-              <span className="text-2xl leading-none">{a.emoji}</span>
-              <span className="text-[11px] font-bold leading-tight text-center">{a.label}</span>
-            </button>
-          ))}
-        </div>
       </div>
 
-      {/* Carousel — full bleed para peek effect */}
-      <div className="pl-5">
+      {/* Carousel */}
+      <div className="pl-5 mt-10">
         <div
-          key={active}
           ref={scrollRef}
           onScroll={handleScroll}
           className="flex gap-3 overflow-x-auto snap-x snap-mandatory pb-2 pr-5"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
-          {album.pages.map((p, i) => (
-            <div key={i} className="snap-center shrink-0 w-[78vw] sm:w-[340px] relative">
+          {pages.map((p, i) => (
+            <div key={i} className="snap-center shrink-0 w-[78vw] sm:w-[300px] relative">
               <div className="rounded-2xl overflow-hidden border-2 border-gray-200 shadow-card bg-white">
                 <img src={p.src} alt={p.tag || ''} className="w-full h-auto block" />
               </div>
@@ -116,7 +67,7 @@ export default function Preview() {
       <div className="max-w-4xl mx-auto px-5">
         {/* Dots */}
         <div className="flex justify-center gap-2 mt-5">
-          {album.pages.map((_, i) => (
+          {pages.map((_, i) => (
             <button
               key={i}
               onClick={() => goTo(i)}
@@ -127,8 +78,7 @@ export default function Preview() {
           ))}
         </div>
 
-        <p className="text-center text-sm font-semibold text-navy-700/60 mt-4">{album.note}</p>
-        <p className="text-center text-xs font-semibold text-gray-400 mt-2">
+        <p className="text-center text-xs font-semibold text-gray-400 mt-5">
           ⚠️ Prévia em baixa resolução — o arquivo original tem qualidade total para impressão
         </p>
       </div>
